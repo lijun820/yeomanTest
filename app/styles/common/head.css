@@ -1,0 +1,103 @@
+@charset "utf-8";
+/*顶部*/
+.topbar{
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #f2f2f2;
+	height: 30px;
+	line-height: 30px;
+}
+.topbar ul, .navgation ul,.navgation li{list-style: none;padding: 0;margin:0;}
+
+.topbar a{text-decoration: none;}
+.topbar-l li{float: left;margin-right: 20px;}
+.topbar-main .arrow{
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	background: url(../../images/bg.png) no-repeat;vertical-align:middle;
+}
+.topbar-l .wx{display: block;text-align: center;padding: 0 10px;}
+.topbar-l .wx:hover{
+	background-color: #fff;
+	border:1px solid #eeeeee;
+	border-top:0;
+	border-bottom: 0; 
+	-webkit-transition: all 0s ease;
+	transition: all 0s ease;
+}
+.topbar-l li .wx:hover .wx-popover{
+	color: #333; 
+	-webkit-transform:scale(1, 1);
+	-moz-transform:scale(1, 1);
+	-ms-transform:scale(1, 1);
+	-o-transform:scale(1, 1);
+	transform:scale(1, 1);
+	opacity: 1;
+}
+.wx-popover{
+	background-color: #fff;
+	border:1px solid #eeeeee;
+	border-top: 0; 
+	text-align: center;
+	width: 100px;
+	min-height: 110px;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	opacity: 0;
+	z-index: 99;
+	webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform:scale(0, 0);
+	-moz-transform:scale(0, 0);
+	-ms-transform:scale(0, 0);
+	-o-transform:scale(0, 0);
+	transform:scale(0, 0);
+}
+.topbar-r li{float: left;margin-left: 20px;}
+.topbar-r li a{display: block;}
+.top-msg{display: block;}
+.subbar{
+	border:1px solid #eeeeee;
+	border-top: 0; 
+	background-color: #fff;
+	min-width: 110px;
+	min-height: 110px;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	display: none;
+	z-index: 99;
+}
+.topbar-r .child{padding: 0 10px;position: relative; }
+.topbar-r .child:hover{background-color: #fff;border:1px solid #eeeeee;border-top:0;border-bottom: 0;padding: 0 9px;}
+.topbar-r .child:hover .subbar{display: block;}
+.subbar li{clear: both;margin-left: 0;line-height:28px;padding: 0 10px;}
+.subbar li a{display: block;white-space: nowrap;max-width: 110px;overflow: hidden;  text-overflow: ellipsis;}
+.child .arrow{
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-ms-transition: all .3s;
+-o-transition: all .3s;
+transition: all .3s;
+}
+.child > a:hover .arrow{
+-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
+}
+.child > a em{color: #ff0000;}
+
+/*导航*/
+.navgation{border-bottom: 2px solid #008ff3;min-height: 75px;}
+.navlist > li{float: left; font-size: 18px;line-height: 75px;padding-left: 15px;position: relative;}
+.navlist > li > a{color: #666;display: block;text-decoration: none;padding: 0 20px;}
+.navlist > li > a:hover,.navlist > li.active > a{background-color: #008ff3;color: #fff;}
+.subNav{display:none;position: absolute;background-color: #fff;border:1px solid #008ff3;min-width:88px;top:73px;left: 15px;z-index: 99;}
+.subNav li{clear:both;line-height: 30px;font-size: 16px;padding-left: 0;text-align: center;}
+.subNav li a{color: #666;display: block;text-decoration: none;}
+.subNav li a:hover{color: #008ff3;}
